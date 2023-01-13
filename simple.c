@@ -1,10 +1,13 @@
 //Make it so we don't need to include any other C files in our build.
 #define CNFG_IMPLEMENTATION
 
-//Optional: Use OpenGL to do rendering on appropriate systems.
-#define CNFGOGL
+//Use FBDEV backend (under development)
+#define CNFG_FBDEV
 
-#include "CNFG.h"
+//Optional: Use OpenGL to do rendering on appropriate systems.
+//#define CNFGOGL
+
+#include "../rawdraw/CNFG.h"
 
 void HandleKey( int keycode, int bDown ) { }
 void HandleButton( int x, int y, int button, int bDown ) { }

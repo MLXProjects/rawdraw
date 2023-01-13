@@ -12,6 +12,8 @@
 #include "CNFGEGLLeanAndMean.c"
 #elif defined( __android__ ) || defined( ANDROID )
 #include "CNFGEGLDriver.c"
+#elif defined( CNFG_FBDEV )
+#include "CNFGFbdevDriver.c"
 #else
 #include "CNFGXDriver.c"
 #endif
